@@ -19,71 +19,71 @@ it has the system utilization rate for the scheduling process in either FIFO or 
 
 
 ### Performance Analysis (all txt files are run with 4 CPUs):
-jobs.txt
-- FIFO: system utilization rate: 67.50%
-- FIFO+Backfill: system utilization rate: 84.38%
-jobs1.txt
-- FIFO: system utilization rate: 100%
-- FIFO+Backfill: system utilization rate: 100%
-jobs2.txt
-- FIFO: system utilization rate: 55%
-- FIFO+Backfill: system utilization rate: 68.75%
-jobsSmall.txt
-- FIFO: system utilization rate: 56.82%
-- FIFO+Backfill: system utilization rate: 62.50%
-jobsLarge.txt
-- FIFO: system utilization rate: 76.88%
-- FIFO+Backfill: system utilization rate: 85.42%
+1. jobs.txt
+  - FIFO: system utilization rate: 67.50%
+  - FIFO+Backfill: system utilization rate: 84.38%
+2. jobs1.txt
+  - FIFO: system utilization rate: 100%
+  - FIFO+Backfill: system utilization rate: 100%
+3. jobs2.txt
+  - FIFO: system utilization rate: 55%
+  - FIFO+Backfill: system utilization rate: 68.75%
+4. jobsSmall.txt
+  - FIFO: system utilization rate: 56.82%
+  - FIFO+Backfill: system utilization rate: 62.50%
+5. jobsLarge.txt
+  - FIFO: system utilization rate: 76.88%
+  - FIFO+Backfill: system utilization rate: 85.42%
 
 Overall, the system utilization rate for the FIFO + backfill scheduling is a lot higher than FIFO, since in the
 FIFO + backfill, it is using as many CPUs as possible, based on arrival times. With FIFO, each job is after its
 previous and if the previous jobs do not take a lot of CPUs, then there will be many vacant CPUs.
 
-jobs.txt
-- FIFO
-  - Avg Wait Time: 4 units of time
-  - Avg Response Time: 4 units of time
-  - Avg Turnaround Time: 6.4 units of time
-- FIFO + Backfill
-  - Avg Wait Time: 2.2 units of time
-  - Avg Response Time: 2.2 units of time
-  - Avg Turnaround Time: 4.2 units of time
-jobs1.txt
-- FIFO
-  - Avg Wait Time: 0.6 units of time
-  - Avg Response Time: 0.6 units of time
-  - Avg Turnaround Time: 2.8 units of time
-- FIFO + Backfill
-  - Avg Wait Time: 0.6 units of time
-  - Avg Response Time: 0.6 units of time
-  - Avg Turnaround Time: 2.8 units of time
-jobs2.txt
-- FIFO
-  - Avg Wait Time: 0.8 units of time
-  - Avg Response Time: 0.8 units of time
-  - Avg Turnaround Time: 1.6 units of time
-- FIFO + Backfill
-  - Avg Wait Time: 0.2 units of time
-  - Avg Response Time: 0.2 units of time
-  - Avg Turnaround Time: 1.2 units of time
-jobsSmall.txt
-- FIFO
-  - Avg Wait Time: 2.6 units of time
-  - Avg Response Time: 2.6 units of time
-  - Avg Turnaround Time: 5 units of time
-- FIFO + Backfill
-  - Avg Wait Time: 1.2 units of time
-  - Avg Response Time: 1.2 units of time
-  - Avg Turnaround Time: 3.6 units of time
-jobsLarge.txt
-- FIFO
-  - Avg Wait Time: 13.7 units of time
-  - Avg Response Time: 13.7 units of time
-  - Avg Turnaround Time: 16.2 units of time
-- FIFO + Backfill
-  - Avg Wait Time: 9.6 units of time
-  - Avg Response Time: 9.6 units of time
-  - Avg Turnaround Time: 12.1 units of time
+1. jobs.txt
+  - FIFO
+    - Avg Wait Time: 4 units of time
+    - Avg Response Time: 4 units of time
+    - Avg Turnaround Time: 6.4 units of time
+  - FIFO + Backfill
+    - Avg Wait Time: 2.2 units of time
+    - Avg Response Time: 2.2 units of time
+    - Avg Turnaround Time: 4.2 units of time
+2. jobs1.txt
+  - FIFO
+    - Avg Wait Time: 0.6 units of time
+    - Avg Response Time: 0.6 units of time
+    - Avg Turnaround Time: 2.8 units of time
+  - FIFO + Backfill
+    - Avg Wait Time: 0.6 units of time
+    - Avg Response Time: 0.6 units of time
+    - Avg Turnaround Time: 2.8 units of time
+3. jobs2.txt
+  - FIFO
+    - Avg Wait Time: 0.8 units of time
+    - Avg Response Time: 0.8 units of time
+    - Avg Turnaround Time: 1.6 units of time
+  - FIFO + Backfill
+    - Avg Wait Time: 0.2 units of time
+    - Avg Response Time: 0.2 units of time
+    - Avg Turnaround Time: 1.2 units of time
+4. jobsSmall.txt
+  - FIFO
+    - Avg Wait Time: 2.6 units of time
+    - Avg Response Time: 2.6 units of time
+    - Avg Turnaround Time: 5 units of time
+  - FIFO + Backfill
+    - Avg Wait Time: 1.2 units of time
+    - Avg Response Time: 1.2 units of time
+    - Avg Turnaround Time: 3.6 units of time
+5. jobsLarge.txt
+  - FIFO
+    - Avg Wait Time: 13.7 units of time
+    - Avg Response Time: 13.7 units of time
+    - Avg Turnaround Time: 16.2 units of time
+  - FIFO + Backfill
+    - Avg Wait Time: 9.6 units of time
+    - Avg Response Time: 9.6 units of time
+    - Avg Turnaround Time: 12.1 units of time
 
 Off of the average wait, response, and turnaround times between FIFO and FIFO+backfill for each of the text files,
 you can tell that there is a decrease in all of the times and that the times are less for FIFO+backfill than FIFO.
